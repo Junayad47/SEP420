@@ -1,0 +1,95 @@
+main>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paras {
+    font-family: calibri;
+    font-weight: 520;
+    font-weight: var(1.25vw);
+    color: rgb(103, 98, 98);
+}
+
+main>ul {
+
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+main>ul>li>a {
+
+    font-family: calibri;
+    font-weight: bolder;
+    font-weight: var(1.25vw);
+    color: rgb(103, 98, 98);
+    text-decoration: none;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+main>img {
+    margin-top: 0px;
+    width: 100%;
+    object-fit: cover;
+    height: 211px;
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.content div>img {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.content>#profile {
+    width: 30%;
+    border-right: 1px solid;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: calibri;
+
+}
+
+.content>#profile>h2 {
+    font-family: calibri;
+    border-bottom: 1px solid;
+}
+
+.content>#annou_content {
+    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+
+.content>#annou_content>h2 {
+    font-family: calibri;
+    border-bottom: 1px solid;
+}
+
+.content>#profile>#profile_info {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.Announcement {
+    font-family: calibri;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 1px solid;
+    background-color: rgba(214, 211, 211, 0.836);
+}
