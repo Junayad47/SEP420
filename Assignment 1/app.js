@@ -12,6 +12,7 @@ const createReservation = (carType, days, seatNeeded) =>
   const car = cars.find((car) => car.type.toUpperCase() === carType.toUpperCase() && car.available);
   if (!car) {
     console.log(`Sorry, no ${carType} available.`);
+    console.log(`\n`);
     return;
   }
 
@@ -50,11 +51,27 @@ car.available = false;
   console.log(`Welcome to Junayad's car rental`);
   console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
   
-//// Prompt user to enter rental details such as car type, rental days, and additional seats needed
-  const prompt = require('prompt-sync')();
-  let carType = prompt(`What type of car do you need? `).toUpperCase();
-  let days = prompt(`For how many days do you need the car? `);
-  let seatNeeded = prompt(`Do you need additional seats? (yes/no) `).toLowerCase() === "yes";
+//// *** / Prompt user to enter rental details such as car type, rental days,
+//// *** / and additional seats needed but this block is commented out to directly pass the values to the function.
+
+/*
+const prompt = require('prompt-sync')();
+let carType = prompt(`What type of car do you need? `).toUpperCase();
+let days = prompt(`For how many days do you need the car? `);
+let seatNeeded = prompt(`Do you need additional seats? (yes/no) `).toLowerCase() === "yes";
+*/
+
+//// *** //// For successful reservation
+carType="Suv";
+days=3;
+seatNeeded = "yes";
+
+//// *** //// For unsuccessful reservation
+/*
+carType="Truck";
+days=3;
+seatNeeded = "yes";
+*/
 
 //// Print rental details entered by the user
   console.log(`\n`);
@@ -64,5 +81,7 @@ car.available = false;
   console.log(`Car Seat: ${seatNeeded ? "true" : "false"}`);
   console.log(`\n`);
 
-//// Call createReservation function with the rental details entered by the user
+//// *** / Call createReservation function with the rental details entered by the user
+//createReservation(carType, days, seatNeeded);
+
 createReservation(carType, days, seatNeeded);
